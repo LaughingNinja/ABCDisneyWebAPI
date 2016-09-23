@@ -1,6 +1,6 @@
 # ABCDisneyWebAPI
 Take home test
-You will have to create the SQL database/table prior to running the solution. Here's the SQL code to do that:
+You will have to create the SQL database/table/stored procedures prior to running the solution. Here's the SQL code to do that:
 CREATE DATABASE Events;
 GO
 
