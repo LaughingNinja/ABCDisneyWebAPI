@@ -1,6 +1,9 @@
 # ABCDisneyWebAPI
 Take home test
-You will have to create the SQL database/table/stored procedures prior to running the solution. Here's the SQL code to do that:
+****POSTMAN instructions after SQL below****
+-- The web.config ConnectionString will have to be pointed to a valid server on your side.
+
+--You will have to create the SQL database/table/stored procedures prior to running the solution. Here's the SQL code to do that:
 CREATE DATABASE Events;
 GO
 
