@@ -51,4 +51,6 @@ BEGIN
 UPDATE dbo.SystemEvents
 SET Description = @description
 WHERE Id = @id
+SELECT * FROM dbo.SystemEvents
+WHERE Id = @id;
 END
