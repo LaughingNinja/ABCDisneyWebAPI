@@ -57,3 +57,9 @@ WHERE Id = @id
 SELECT * FROM dbo.SystemEvents
 WHERE Id = @id;
 END
+
+Calls to CRUD methods:
+**NOTE: I had an issue w/ casting the id's and ran out of time to debug, so, that's not being poplulated. It was working and started giving me a casting issue. Sorry.
+1. GET All Records: http://localhost:64193/api/SystemEvents
+2. GET Single Record: http://localhost:64193/api/SystemEvents/1
+3. 
