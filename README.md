@@ -25,11 +25,17 @@ ELSE
 
 CREATE PROCEDURE dbo.AddSystemEvent @description VARCHAR(255)
 AS
+DECLARE @new_identity INT
 BEGIN
 INSERT INTO dbo.SystemEvents
 (Description)
 VALUES
 (@description)
+
+SELECT @new_identity = SCOPE_IDENTITY();
+
+SELECT * FROM dbo.SystemEvents
+WHERE Id = @new_identity;
 END
 
 CREATE PROCEDURE [dbo].[DeleteSystemEvent] @id INT
